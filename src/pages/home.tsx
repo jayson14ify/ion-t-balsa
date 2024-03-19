@@ -2,6 +2,9 @@ import {
     //Initial Components
     IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
  
+    //CSS
+    //import './Tab1.css';
+
  const Home: React.FC = () => {
    return (
      <IonPage>
