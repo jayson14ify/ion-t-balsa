@@ -43,7 +43,7 @@ const App: React.FC = () => (
 
             {/* Home Router */}
             <Route exact path="home">
-            <Home/>
+             <Home/>
             </Route>
 
           <Route exact path="/tab1">
