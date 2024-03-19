@@ -2,7 +2,7 @@ import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonIcon, IonLabel, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs, setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { addCircleOutline, calculatorOutline, ellipse, personCircleOutline, square, triangle } from 'ionicons/icons';
+import { addCircleOutline, calculatorOutline, ellipse, home, personCircleOutline, square, triangle } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
@@ -35,7 +35,7 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          
+
           {/* Application default route */}
             <Route exact path="/">
             <Redirect to="/home"/>
@@ -60,6 +60,10 @@ const App: React.FC = () => (
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
+        <IonTabButton tab="home" href="/home">
+            <IonIcon aria-hidden="true" icon={home} />
+            <IonLabel>Home</IonLabel>
+          </IonTabButton>
           <IonTabButton tab="tab1" href="/tab1">
             <IonIcon aria-hidden="true" icon={personCircleOutline} />
             <IonLabel>Tab 1</IonLabel>
