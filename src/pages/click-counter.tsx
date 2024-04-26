@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCard } from '@ionic/react';
 import './click-counter.css';
 
 const clickcounter: React.FC = () => {
@@ -7,6 +7,10 @@ const clickcounter: React.FC = () => {
 
   const handleButtonClick = () => {
     setClickCount(clickCount + 1);
+  };
+
+  const resetCounter = () => {
+    setClickCount(0);
   };
 
   return (
@@ -22,12 +26,17 @@ const clickcounter: React.FC = () => {
             <IonTitle size="large">Click Counter</IonTitle>
           </IonToolbar>
         </IonHeader>
+
         <div className="container">
           <p>Number of Clicks: {clickCount}</p>
-          <IonButton color="tertiary" onClick={handleButtonClick}>CLICK ME!</IonButton>
+          <IonButton shape="round" expand="block" color="tertiary" onClick={handleButtonClick}>CLICK ME!</IonButton>
         </div>
+     <div className="resetbutton">
+              <IonButton shape="round" expand="block" color="tertiary" onClick={resetCounter}>Reset</IonButton>
+     </div>
       </IonContent>
     </IonPage>
+
   );
 };
 
