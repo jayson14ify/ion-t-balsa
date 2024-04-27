@@ -29,29 +29,39 @@ const Home: React.FC = () => {
 
         {/* First Card */}
 
+     <div className="calcu">
         <IonButton onClick={() => handleCardClick('/calculator')} size= "large" fill="clear" color="dark">
             Calculator
          <IonIcon size="large" slot="start" icon={calculatorOutline} ></IonIcon>
         </IonButton>
+     </div>
 
         {/* Second Card */}
+
+      <div className="clickcount">
         <IonButton onClick={() => handleCardClick('/click-counter')} size= "large" fill="clear" color="dark">
             Click Counter
             <IonIcon size="large" slot="start" icon={addOutline} ></IonIcon>
         </IonButton>
+      </div>
 
         {/* Third Card */}
+
+      <div className="Todo">
         <IonButton onClick={() => handleCardClick('/TodoList')} size= "large" fill="clear" color="dark">
             To do List
             <IonIcon size="large" slot="start" icon={listOutline} ></IonIcon>
         </IonButton>
+      </div>
 
         {/* Fourth Card */}
+
+      <div className="blanko">
         <IonButton onClick={() => handleCardClick('#')} size= "large" fill="clear" color="dark">
             Blank
             <IonIcon size="large" slot="start" icon={chatbubbleOutline} ></IonIcon>
         </IonButton>
-        
+      </div> 
 
       </IonContent>
     </IonPage>

@@ -68,7 +68,7 @@ const App: React.FC = () => (
           <Route path="/calculator">
             <Calculator />
           </Route>
-          <Route exact path="/todolist">
+          <Route exact path="/TodoList">
             <TodoList />
           </Route>
 
