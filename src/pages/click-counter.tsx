@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonBackButton, IonButtons } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonBackButton, IonButtons, IonCard } from '@ionic/react';
 import './click-counter.css';
 
 const clickcounter: React.FC = () => {
@@ -30,8 +30,12 @@ const clickcounter: React.FC = () => {
           </IonToolbar>
         </IonHeader>
 
+        {/* <IonCard>
+      <img src="https://clickcounter.io/assets/logo-clickcounter.io.png" />
+        </IonCard> */}
+
         <div className="container">
-          <p>Number of Clicks: {clickCount}</p>
+          <h4>Number of Clicks: {clickCount}</h4>
           <IonButton shape="round" expand="block" color="tertiary" onClick={handleButtonClick}>CLICK ME!</IonButton>
         </div>
      <div className="resetbutton">
