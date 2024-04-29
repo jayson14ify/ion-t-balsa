@@ -30,9 +30,9 @@ const clickcounter: React.FC = () => {
           </IonToolbar>
         </IonHeader>
 
-        {/* <IonCard>
+        <IonCard>
       <img src="https://clickcounter.io/assets/logo-clickcounter.io.png" />
-        </IonCard> */}
+        </IonCard>
 
         <div className="container">
           <h4>Number of Clicks: {clickCount}</h4>
