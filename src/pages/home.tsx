@@ -57,8 +57,8 @@ const Home: React.FC = () => {
         {/* Fourth Card */}
 
       <div className="blanko">
-        <IonButton onClick={() => handleCardClick('#')} size= "large" fill="clear" color="dark">
-            Blank
+        <IonButton onClick={() => handleCardClick('/quotegenerator')} size= "large" fill="clear" color="dark">
+            Quote Generator
             <IonIcon size="large" slot="start" icon={chatbubbleOutline} ></IonIcon>
         </IonButton>
       </div> 
