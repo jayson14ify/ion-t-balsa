@@ -3,7 +3,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCar
          IonCardSubtitle, IonCardTitle, IonCardContent, IonBackButton, IonButtons, IonNav,  IonImg, 
          IonIcon} from '@ionic/react';
 import { useHistory } from 'react-router-dom';
-import { addOutline, calculatorOutline, chatbubbleOutline, clipboardOutline, documentTextOutline, listOutline } from 'ionicons/icons';
+import { addOutline, calculatorOutline, chatbubbleOutline, clipboardOutline, documentTextOutline, listOutline, stopwatchOutline } from 'ionicons/icons';
 
 const Home: React.FC = () => {
   const history = useHistory();
@@ -41,7 +41,7 @@ const Home: React.FC = () => {
       <div className="clickcount">
         <IonButton onClick={() => handleCardClick('/click-counter')} size= "large" fill="clear" color="dark">
             Click Counter
-            <IonIcon size="large" slot="start" icon={addOutline} ></IonIcon>
+            <IonIcon size="large" slot="start" icon={stopwatchOutline} ></IonIcon>
         </IonButton>
       </div>
 
