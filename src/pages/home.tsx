@@ -3,7 +3,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCar
          IonCardSubtitle, IonCardTitle, IonCardContent, IonBackButton, IonButtons, IonNav,  IonImg, 
          IonIcon} from '@ionic/react';
 import { useHistory } from 'react-router-dom';
-import { addOutline, calculatorOutline, chatbubbleOutline, listOutline } from 'ionicons/icons';
+import { addOutline, calculatorOutline, chatbubbleOutline, clipboardOutline, documentTextOutline, listOutline } from 'ionicons/icons';
 
 const Home: React.FC = () => {
   const history = useHistory();
@@ -50,16 +50,25 @@ const Home: React.FC = () => {
       <div className="Todo">
         <IonButton onClick={() => handleCardClick('/TodoList')} size= "large" fill="clear" color="dark">
             To do List
-            <IonIcon size="large" slot="start" icon={listOutline} ></IonIcon>
+            <IonIcon size="large" slot="start" icon={clipboardOutline} ></IonIcon>
         </IonButton>
       </div>
 
         {/* Fourth Card */}
 
-      <div className="blanko">
+      <div className="quotegen">
         <IonButton onClick={() => handleCardClick('/quotegenerator')} size= "large" fill="clear" color="dark">
             Quote Generator
             <IonIcon size="large" slot="start" icon={chatbubbleOutline} ></IonIcon>
+        </IonButton>
+      </div> 
+
+        {/* Fifth Card */}
+
+      <div className="notes">
+        <IonButton onClick={() => handleCardClick('/notes')} size= "large" fill="clear" color="dark">
+            Notes
+            <IonIcon size="large" slot="start" icon={documentTextOutline} ></IonIcon>
         </IonButton>
       </div> 
 
