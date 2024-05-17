@@ -51,31 +51,31 @@ const App: React.FC = () => (
         <IonRouterOutlet>
           
           {/* Application default route */}
-          <Route exact path="/">
-            <Redirect to="/home" />
+          <Route exact path="">
+            <Redirect to="/ion-t-balsa/home" />
           </Route>
 
           {/* Home Router */}
-          <Route exact path="/home">
+          <Route exact path="/ion-t-balsa/home">
             <Home />
           </Route>
 
-          <Route exact path="/profile">
+          <Route exact path="/ion-t-balsa/profile">
             <Profile />
           </Route>
-          <Route exact path="/click-counter">
+          <Route exact path="/ion-t-balsa/click-counter">
             <ClickCounter />
           </Route>
-          <Route path="/calculator">
+          <Route path="/ion-t-balsa/calculator">
             <Calculator />
           </Route>
-          <Route exact path="/Todolist">
+          <Route exact path="/ion-t-balsa/Todolist">
             <TodoList />
           </Route>
-          <Route exact path="/quotegenerator">
+          <Route exact path="/ion-t-balsa/quotegenerator">
             <QuoteGenerator />
           </Route>
-          <Route exact path="/notes">
+          <Route exact path="/ion-t-balsa/notes">
             <Notes />
           </Route>
 
@@ -83,28 +83,19 @@ const App: React.FC = () => (
 
         <IonTabBar slot="bottom">
           {/* Home Tab Button */}
-          <IonTabButton tab="home" href="/home">
+          <IonTabButton tab="home" href="/ion-t-balsa/home">
             <IonIcon aria-hidden="true" icon={home} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
 
-          <IonTabButton tab="profile" href="#">
-            <IonIcon aria-hidden="true" icon={chatbubbleEllipses} />
-            <IonLabel>Blank</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="Click-Counter" href="/profile">
+     
+          <IonTabButton tab="Click-Counter" href="/ion-t-balsa/profile">
             <IonIcon aria-hidden="true" icon={personCircleOutline} />
             <IonLabel>Profile</IonLabel>
           </IonTabButton>
-          {/* <IonTabButton tab="calculator" href="/calculator">
-            <IonIcon aria-hidden="true" icon={calculatorOutline} />
-            <IonLabel>Calculator</IonLabel>
-          </IonTabButton> */}
+    
         </IonTabBar>
-        <IonTabButton tab="todo-list" href="/TodoList">
-          <IonIcon aria-hidden="true" icon={ellipse} />
-         <IonLabel>To-Do List</IonLabel>
-       </IonTabButton>
+
 
       </IonTabs>
     </IonReactRouter>
