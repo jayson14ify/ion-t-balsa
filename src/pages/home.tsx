@@ -30,7 +30,7 @@ import {
 import './home.css';
 
 //Ionic Icons
-import { speedometerOutline,calculator,pencil, chatbubble, readerOutline, logoIonic,logoFirebase, logoReact} from 'ionicons/icons';
+import { calculator, readerOutline, logoIonic,logoFirebase, logoReact, newspaperOutline, qrCodeOutline, speedometerOutline, calculatorOutline} from 'ionicons/icons';
 
 const cardData = [
   {
@@ -46,7 +46,7 @@ const cardData = [
   },
   {
     title: 'Calculator',
-    icon: calculator,
+    icon: calculatorOutline,
     subtitle: 'Applet #2',
     link: '/ion-t-balsa/calculator',
     tags: {
@@ -56,7 +56,7 @@ const cardData = [
   },
   {
     title: 'To Do List',
-    icon: pencil,
+    icon: newspaperOutline,
     subtitle: 'Applet #3',
     link: '/ion-t-balsa/TodoList',
     tags: {
@@ -66,7 +66,7 @@ const cardData = [
   },
   {
     title: 'Quote Generator',
-    icon: chatbubble,
+    icon: qrCodeOutline,
     subtitle: 'Applet #4',
     link: '/ion-t-balsa/quotegenerator',
     tags: {
@@ -115,7 +115,7 @@ const Home: React.FC = () => {
           {cardData
             .filter((card) => card.title.toLowerCase().includes(searchTerm.toLowerCase()))
             .map((card, index) => (
-              <IonCard key={index} routerLink={card.link} routerDirection='forward'>
+              <IonCard key={index} routerLink={card.link} routerDirection='forward' className="custom-card" >
                 <IonCardHeader>
                   <IonCardTitle>
                     <IonGrid>

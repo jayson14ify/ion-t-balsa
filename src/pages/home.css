@@ -1,0 +1,14 @@
+.custom-card {
+    border: 1px solid #ccc;
+    border-color: rgba(117, 155, 238, 0.623);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-image: url(https://wallpapers.com/images/hd/black-gradient-background-5rkgswvdzdb5tjl3.jpg);
+  }
+  .home-card-icon {
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+  }
+  .home-card-title {
+    color: rgb(230, 228, 228);
+  }
